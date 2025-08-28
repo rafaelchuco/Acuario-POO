@@ -1,8 +1,14 @@
 package acuario
-fun main() {
-    val miAcuario = Acuario(ancho = 25, largo = 25, alto = 40)
-    miAcuario.imprimirTamano()
 
-    val miTorre = TanqueTorre(diametro = 25, alto = 40)
-    miTorre.imprimirTamano()
+fun crearPeces() {
+    val t = Tiburon()
+    val p = PezPayaso()
+    println("Tiburón -> color: ${t.color}")
+    t.comer()
+    println("PezPayaso -> color: ${p.color}")
+    p.comer()
+}
+
+fun main() {
+    crearPeces()
 }
