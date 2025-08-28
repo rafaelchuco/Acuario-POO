@@ -1,5 +1,4 @@
 package acuario
-
 fun main() {
     val miAcuario = Acuario(ancho = 25, largo = 25, alto = 40)
     miAcuario.imprimirTamano()
